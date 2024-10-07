@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <script src="./script.js" defer></script>
+
+    <style>
+      .board {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .board__row {
+        display: flex;
+        border-bottom: 3px solid black;
+      }
+
+      .board__row:last-child {
+        border-bottom: 0;
+      }
+
+      .board__cell {
+        border-right: 3px solid black;
+      }
+
+      .board__cell:last-child {
+        border-right: 0;
+      }
+
+      .board__button {
+        border: 0;
+        background-color: transparent;
+        height: 64px;
+        width: 64px;
+        font-size: 48px;
+        cursor: pointer;
+        display: block;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 42px;
+      }
+
+      #turnInfo {
+        text-align: center;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Tic Tac Toe</h1>
+
+      <p id="turnInfo">X's Turn</p>
+    </header>
+
+    <main>
+      <div class="board">
+        <div class="board__row">
+          <div class="board__cell">
+            <button class="board__button" id="button1"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button2"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button3"></button>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__cell">
+            <button class="board__button" id="button4"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button5"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button6"></button>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__cell">
+            <button class="board__button" id="button7"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button8"></button>
+          </div>
+          <div class="board__cell">
+            <button class="board__button" id="button9"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
